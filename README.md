@@ -14,6 +14,10 @@ A small buffer-overflow exercise on a tiny C target (`camelot.c` / `camelot_wrap
   asciinema play asciinema.cast
   ```
 
+## License
+
+[MIT](LICENSE) — applies to my own work in this repo (writeups, scripts, exploits). Class-distributed source/binaries retain their original course copyright.
+
 ## Sequence
 
 Part of a five-piece cybersecurity coursework cluster:
