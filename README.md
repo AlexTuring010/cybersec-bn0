@@ -1,3 +1,25 @@
-Ολοκλήρωσα την παραπάνω εργασία με επιτυχία. Μια λεπτομερής περιγραφή της διαδικασίας επίλυσης βρίσκεται στο αρχείο `exploit_notes.md`. Εκεί κατέγραψα σημειώσεις στα αγγλικά, καθώς αυτό με βολεύει περισσότερο. Οι σημειώσεις περιλαμβάνουν όχι μόνο την τελική λύση, αλλά και διάφορες παρατηρήσεις, γενικές πληροφορίες για μελλοντική μελέτη, καθώς και τη ροή της σκέψης μου κατά την εξερεύνηση του προβλήματος. Περιγράφω επίσης γιατί εγκατέλειψα κάποιες αρχικές ιδέες, τα προβλήματα που παρουσίασαν και πώς η τελική λύση τα αντιμετώπισε.
+# cybersec-bn0
 
-Χρησιμοποίησα το `asciinema`, όπως ζητήσατε, για να καταγράψω το terminal κατά την εκτέλεση του exploit. Μπορείτε να αναπαράγετε την καταγραφή με την εντολή `asciinema play asciinema.cast`. Στην ουσία, ακολουθώ ακριβώς την ίδια διαδικασία που περιγράφατε στο παράδειγμα της εκφώνησης, χωρίς να κάνω κάτι διαφορετικό.
+Class warm-up for *Introduction to Computer Security* at the University of Athens (Department of Informatics & Telecommunications).
+
+A small buffer-overflow exercise on a tiny C target (`camelot.c` / `camelot_wrap.c`). Following the guided example from the assignment brief, I overflow a stack buffer to redirect execution and grab the flag.
+
+## What's in this repo
+
+- **`camelot.c`** / **`camelot_wrap.c`** — the vulnerable target.
+- **`exploit.py`** — the working exploit.
+- **`exploit_notes.md`** — detailed notes (in English): the offset, the return address, why some early ideas were dropped, and what the final solution does.
+- **`asciinema.cast`** — terminal recording of the exploit running. Replay with:
+  ```bash
+  asciinema play asciinema.cast
+  ```
+
+## Sequence
+
+Part of a five-piece cybersecurity coursework cluster:
+
+1. **cybersec-bn0** *(you are here)* — class warm-up
+2. [cybersec-hw0](https://github.com/AlexTuring010/cybersec-hw0) — first homework
+3. [cybersec-hw1](https://github.com/AlexTuring010/cybersec-hw1) — HackCenter binary exploitation (1230 points)
+4. [cybersec-hw2](https://github.com/AlexTuring010/cybersec-hw2) — HackCenter web & crypto (3rd place)
+5. [cybersec-hw3-chimera-agents](https://github.com/AlexTuring010/cybersec-hw3-chimera-agents) — team CTF capstone
